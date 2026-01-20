@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- This is the tab title you see in browser -->
+    <title>User Management App</title>
+    
+    <!-- Link to our CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container for our app -->
+    <div class="container">
+        
+        <!-- App title -->
+        <h1>User Management System</h1>
+        
+        <!-- REGISTRATION SECTION -->
+        <div class="form-section">
+            <h2>Register New User</h2>
+            
+            <!-- Form for registration -->
+            <form id="registerForm">
+                <!-- Input for name -->
+                <input 
+                    type="text" 
+                    id="regName" 
+                    placeholder="Enter your name"
+                    required
+                >
+                
+                <!-- Input for email -->
+                <input 
+                    type="email" 
+                    id="regEmail" 
+                    placeholder="Enter your email"
+                    required
+                >
+                
+                <!-- Input for password -->
+                <input 
+                    type="password" 
+                    id="regPassword" 
+                    placeholder="Enter your password"
+                    required
+                >
+                
+                <!-- Submit button -->
+                <button type="submit">Register</button>
+            </form>
+            
+            <!-- Area to show messages -->
+            <div id="registerMessage"></div>
+        </div>
+        
+        <!-- LOGIN SECTION -->
+        <div class="form-section">
+            <h2>Login</h2>
+            
+            <!-- Form for login -->
+            <form id="loginForm">
+                <!-- Input for email -->
+                <input 
+                    type="email" 
+                    id="loginEmail" 
+                    placeholder="Enter your email"
+                    required
+                >
+                
+                <!-- Input for password -->
+                <input 
+                    type="password" 
+                    id="loginPassword" 
+                    placeholder="Enter your password"
+                    required
+                >
+                
+                <!-- Submit button -->
+                <button type="submit">Login</button>
+            </form>
+            
+            <!-- Area to show messages -->
+            <div id="loginMessage"></div>
+        </div>
+        
+        <!-- DISPLAY USERS SECTION -->
+        <div class="form-section">
+            <h2>All Registered Users</h2>
+            
+            <!-- Button to load users -->
+            <button id="loadUsers">Show All Users</button>
+            
+            <!-- Area where users will be displayed -->
+            <div id="usersList"></div>
+        </div>
+        
+    </div>
+    
+    <!-- Link to our JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
